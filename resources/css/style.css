@@ -1,0 +1,14 @@
+
+
+
+/*Nav Bar  -- no logos on desktop, logos only on mobile*/
+.mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px;){
+
+  .mobilenav {
+    display: block;
+  }
+}
