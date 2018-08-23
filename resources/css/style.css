@@ -140,14 +140,18 @@ padding-top: 18px;
 }
 
 .info-boxes {
-  width: 40%;
+width: 35%;
 }
 
 .info-box {
-  display: flex;
+  display: inline-flex;
 }
 
 .info-img img{
-
   width: 35%;
+
+}
+.story-img-text {
+  width: 65%;
+  font-family: Helvetica;
 }
