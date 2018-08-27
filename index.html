@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
     <title>Colmar Academy</title>
   </head>
   <body>
 
 <!--Nav bar: This is white, has the logo and links in mobile the text is swapped for .svg logos-->
-<section class= "header">
+<div class= "header">
 <div class="logo-colmar">
   <img src="./resources/images/ic-logo.svg" alt="ColmarAcademy Logo">
   <span id=Colmar>Colmar</span><span id=Academy>Academy</span>
@@ -28,18 +28,18 @@
     </ul>
 </div>
 </div>
-</section>
+</div>
 <!--Hero area. Large image, grey background, "Learn Something New Everyday" Start here button-->
-  <section class="learn">
-  <div class="learning">
+  <div class="learn">
+  <div class="left learning">
     <img src="./resources/images/banner.jpg" alt="People studying">
   </div>
-  <div class="something">
+  <div class="right something">
     <h1>Learn something new everyday</h1>
     <h3>Lorem ipsum dolor sit amet, consectetur adipicing elit.</h3>
     <span>Start here</span>
   </div>
-</section>
+</div>
 
 <!--Second section: image of guy reading, three stacked boxes-->
 <div class="practice">
@@ -61,7 +61,7 @@
            alt="students walking along a path" />
          </div>
          <div class="story-img-text">
-           <h1>Orientation date</h1>
+           <h2>Orientation date</h2>
            <p>Tue 10/11 &#38; Wed 10/12: 8am-3pm</p>
            <a href="#">Read more</a>
          </div>
@@ -72,7 +72,7 @@
            <img src="resources/images/information-campus.jpg" alt="a place to study. It has a map!" />
          </div>
          <div class="story-img-text">
-           <h1>Our campus</h1>
+           <h2>Our campus</h2>
            <p>Find which campus is close by you</p>
            <a href="#">Read more</a>
          </div>
@@ -84,25 +84,25 @@
            alt="a very wise man with glasses" />
          </div>
          <div class="story-img-text">
-           <h1>Our guest lecture</h1>
+           <h2>Our guest lecture</h2>
            <p>Join a keynote with Olivier Sack about music in medical
              treatment</p>
            <a href="#">Read more</a>
          </div>
        </div>
-     </div>
+    </div>
    </div>
 
 <!--Third section on "Start Learning" grey background 6 boxes-->
-<div class="learning">
-  <h2>Start Learning</h2>
-</div>
+<div class="Learning">
+      <h1>Start Learning</h1>
+
 
 <div class="featured-courses">
     <div class="course-box">
       <img src="./resources/images/course-software.jpg" alt="">
         <div class="course-box-text">
-          <h4>Software engineering</h4>
+          <h3>Software engineering</h3>
           <span>Courses</span>
           <p>Web Development, Mobile Development, iOT, APIs</p>
         </div>
@@ -110,7 +110,7 @@
     <div class="course-box">
       <img src="./resources/images/course-computer-art.jpg" alt="">
         <div class="course-box-text">
-          <h4>Computer Art</h4>
+          <h3>Computer Art</h3>
           <span>Courses</span>
           <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
         </div>
@@ -118,7 +118,7 @@
     <div class="course-box">
       <img src="./resources/images/course-design.jpg" alt="">
         <div class="course-box-text">
-          <h4>Design</h4>
+          <h3>Design</h3>
           <span>Courses</span>
           <p>User Experience Design, User Research, Visual Design</p>
         </div>
@@ -126,7 +126,7 @@
     <div class="course-box">
       <img src="./resources/images/course-data.jpg" alt="">
         <div class="course-box-text">
-          <h4>Data</h4>
+          <h3>Data</h3>
           <span>Courses</span>
           <p>Data Science, Big Data, SQL, Data Visualization</p>
         </div>
@@ -134,7 +134,7 @@
     <div class="course-box">
       <img src="./resources/images/course-business.jpg" alt="">
         <div class="course-box-text">
-          <h4>Business</h4>
+          <h3>Business</h3>
           <span>Courses</span>
           <p>Product Development, Business Development, Startup</p>
         </div>
@@ -142,35 +142,59 @@
     <div class="course-box">
       <img src="./resources/images/course-marketing.jpg" alt="">
         <div class="course-box-text">
-          <h4>Marketing</h4>
+          <h3>Marketing</h3>
           <span>Courses</span>
           <p>Analytics, Content Marketing, Mobile Marketing</p>
         </div>
     </div>
 </div>
+</div>
 
 <!--Fourth Section "Thesis Exhibit" There's a video here and two more rectangular boxes-->
-<div class="exhibition-featured">
-  <h2>Thesis exhibit</h2>
-  <div class="video">
-    <video src="./resources/videos/thesis.mp4"></video>
-    <h4>Reimagine urban</h4>
-    <p>Oh look! even more latin that I can't copy and paste, so instead I'm going to write a few lines in English,
-    Like the good Lord intended. This is a video of a box. It does have some windows, yes. But mostly it's a box. Edgy!</p>
-  </div>
-  <div class="thesis-boxes">
-    <div class="thesis-box">
-      <img src="./resources/images/thesis-fisma.jpg" alt="">
-      <h4>Fisma: Design and Prototype</h4>
-      <p>Designer showcase of new prototype product</p>
-    </div>
-    <div class="thesis-box">
-      <img src="./resources/images/thesis-now-and-then.jpg" alt="">
-      <h4>Now and then</h4>
-      <p>Research study about New York</p>
-    </div>
-  </div>
-</div>
+<div class="thesis-exhibit">
+
+        <h1 class="thesis-exhibit-text">Thesis exhibit</h1>
+
+        <div class="thesis">
+
+          <div class="left top-video">
+            <video src="resources/videos/thesis.mp4" controls>
+              Video not supported
+            </video>
+            <h1 class="reimagine">Reimagine urban</h1>
+            <p>&#34;Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+            commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus
+            sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
+            tristique ligula.&#34;
+            </p>
+            <span>Emanuel, Sr Strategist at Hiring.com</span>
+          </div>
+
+        <div class="right">
+          <div class="stories">
+            <div class="story thesis-story">
+              <div class="story-img topstory">
+                <img src="resources/images/thesis-fisma.jpg" alt="cellphone" />
+              </div>
+              <div class="story-img-text toptext">
+                <h1>Fisma: Design and Prototype</h1>
+                <p>Designer showcase of new prototype product</p>
+              </div>
+            </div>
+
+            <div class="story thesis-story">
+              <div class="story-img">
+                <img src="resources/images/thesis-now-and-then.jpg" alt="The Empire State Building" />
+              </div>
+              <div class="story-img-text">
+                <h1>Now and then</h1>
+                <p>Research study about New York</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 <!--Footer area-->
 <div class="footer">
