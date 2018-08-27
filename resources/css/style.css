@@ -6,12 +6,17 @@ html {
 
 body {
   margin: 0;
-
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #4a4a4a;
 }
+
+a:hover {
+  color: blue;
+}
+
 
 h1 {
   font-size: 2rem;
@@ -59,8 +64,10 @@ p {
 }
 
 .nav-desktop a {
-  padding: 16px;
+  padding: 1rem;
+  text-decoration: none;
 }
+
 
 .mobilenav {
   display: none;
@@ -110,11 +117,16 @@ text-align: left;
   padding-bottom: 1.25rem;
 }
 
-.something span {
+.button{
   padding: 8px 56px;
   background-color: #4a4a4a;
   color: white;
   font-family: Helvetica;
+}
+
+.button:hover {
+  background-color: white;
+  color: #4a4a4a;
 }
 
 /*Second section: image of guy reading, three stacked boxes*/
@@ -146,26 +158,26 @@ width: 60%;
 .practicing p {
 padding: 1rem 0rem;
 color: #4a4a4a;
-
 }
 
 .practicing span {
 font-style: italic;
-
-
 }
 
 .info-boxes {
-width: 40%
-
-
+width: 40%;
+padding-top: 2rem;
 }
 
 .info-box {
   display: flex;
   border: 1px solid #cccccc;
-
 }
+
+.info-box:hover {
+  background-color: #cccccc;
+}
+
 .info-img {
   width: 35%;
   padding: 1rem;
@@ -175,38 +187,42 @@ width: 40%
   width: 100%;
 
 }
-.story-img-text {
-  width: 65%;
-  font-family: Helvetica;
-  padding: 1rem;
-}
 
 .story-img-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65%;
-  margin-left: 0.5rem;
+  width: 100%;
 }
 
 
-/*Third section on "Start Learning" grey background 6 boxes*/
-.learning {
 
+/*Third section on "Start Learning" grey background 6 boxes*/
+.Learning {
+  background-color: lightgrey;
+  margin-top: 2rem;
+}
+
+.Learning h1 {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .featured-courses {
   display: flex;
   flex-wrap: wrap;
-  background-color: lightgrey;
   align-content: space-around;
 }
 
 .course-box {
 width: 350px;
+padding: 1rem;
+margin: 1rem;
+transition: transform .2s;
+}
 
-padding: 2rem;
-margin: 2rem;
+.course-box:hover {
+  transform: scale(1.1);
 }
 
 .course-box img {
@@ -216,6 +232,7 @@ margin: 2rem;
 .course-box-text {
   background-color: white;
   padding: 1.5rem;
+
 }
 
 .course-box-text h3 {
