@@ -21,20 +21,24 @@ a:hover {
 h1 {
   font-size: 2rem;
   font-weight: bold;
+  color: #4a4a4a;
 }
 
 h2 {
   font-size: 1.25rem;
   font-weight: bold;
+  color: #4a4a4a;
 }
 
 h3 {
   font-size: 1.15rem;
   font-weight: bold;
+  color: #4a4a4a;
 }
 
 p {
   font-size: 1rem;
+  color: #4a4a4a;
 }
 
 * {
@@ -206,6 +210,7 @@ padding-top: 2rem;
 .Learning h1 {
   text-align: center;
   padding-top: 2rem;
+  color: #4a4a4a;
 }
 
 .featured-courses {
@@ -232,6 +237,7 @@ transition: transform .2s;
 .course-box-text {
   background-color: white;
   padding: 1.5rem;
+  height: 120px;
 
 }
 
@@ -251,6 +257,8 @@ transition: transform .2s;
 
 .thesis-exhibit h1{
   width: 100%;
+  padding-bottom: 2rem;
+  color: #4a4a4a;
 }
 
 .thesis-exhibit-text {
@@ -262,15 +270,72 @@ transition: transform .2s;
   display: flex;
 }
 
-.left video {
+.thesis-left {
+  width: 60%;
+  padding: 2rem 1rem;
+}
+
+video {
   width: 100%;
 }
 
-.story-img-text h1 {
-  font-size: 1.5rem;
+.video-text {
+  width: 80%;
 }
 
-.reimagine {
-  font-size: 1.5rem;
-  margin-top: 2rem;
+.thesis-right {
+  width: 40%;
+  margin: 2rem;
+}
+
+
+.thesis-story {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+}
+
+.thesis-story:hover {
+  background-color: #cccccc
+}
+
+.thesis-img {
+  width: 35%;
+}
+
+.thesis-img img {
+  width: 100%;
+}
+
+.thesis-img-text {
+  text-align: left;
+  width: 65%;
+  padding: 0 2rem 0 0.5rem;
+}
+
+.video h2 {
+  padding: 1rem 0;
+}
+
+.video p{
+  padding-bottom: 1rem;
+}
+
+.video span{
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+
+/*line between thesis area and footer*/
+
+hr {
+  color: #cccccc;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
