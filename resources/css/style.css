@@ -38,7 +38,7 @@ a {
   padding: 24px;
 }
 
-.nav-desktop a{
+.nav-desktop a {
   padding: 16px;
 }
 
@@ -55,7 +55,7 @@ a {
 
 /*Hero area. Large image, grey background, "Learn Something New Everyday" Start here button*/
 
-.learn{
+.learn {
   background-color: lightgrey;
   display: flex;
   padding-top: 64px;
@@ -148,10 +148,50 @@ width: 35%;
 }
 
 .info-img img{
-  width: 35%;
+  width: 100%;
 
 }
 .story-img-text {
   width: 65%;
   font-family: Helvetica;
+}
+
+
+/*Third section on "Start Learning" grey background 6 boxes*/
+.learning h2 {
+  font-family: Helvetica;
+  font-size: 24px;
+
+  text-align: center;
+  padding: 32px;
+
+}
+
+.featured-courses {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgrey;
+  align-content: space-around;
+}
+
+.course-box {
+width: 350px;
+
+padding: 32px;
+margin: 32px;
+}
+
+.course-box img {
+  width: 100%;
+}
+
+.course-box-text {
+  background-color: white;
+  padding: 24px;
+  font-family: helvetica;
+}
+
+.course-box-text h4 {
+  font-weight: bold;
+  padding-bottom: 18px;
 }
