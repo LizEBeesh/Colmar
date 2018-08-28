@@ -77,10 +77,26 @@ p {
   display: none;
 }
 
-@media only screen and (max-width: 1024px;){
+/*mobile nav*/
 
+@media only screen and (max-width: 720px){
+
+.nav-desktop a{
+  display: none;
+}
+
+.logo-colmar span{
+  display: none;
+}
   .mobilenav {
-    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header {
+    height: 4rem;
   }
 }
 
@@ -133,6 +149,33 @@ text-align: left;
   color: #4a4a4a;
 }
 
+@media only screen and (max-width: 720px){
+  .learn {
+    flex-direction: column;
+    margin: auto;
+
+  }
+
+  .learning {
+    width: 100%;
+
+  }
+
+  .learning img{
+    width: 100%;
+    padding: 0;
+  }
+
+  .something {
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+  }
+
+  .button{
+    width: initial;
+    margin: 1rem 1rem 2rem 2rem;
+  }
+  }
 /*Second section: image of guy reading, three stacked boxes*/
 
 
@@ -171,6 +214,7 @@ font-style: italic;
 .info-boxes {
 width: 40%;
 padding-top: 2rem;
+margin-right: 2rem;
 }
 
 .info-box {
@@ -197,9 +241,38 @@ padding-top: 2rem;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  padding-right: 0.5rem;
 }
 
+.info-boxes-mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 720px){
+  .practice {
+    display: none;
+  }
+
+  .info-boxes-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+.info-box-mobile {
+  padding: 1rem;
+}
+
+.info-box-mobile:hover {
+  background-color: #cccccc;
+}
+
+.story-img-text {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+}
 
 /*Third section on "Start Learning" grey background 6 boxes*/
 .Learning {
@@ -238,7 +311,6 @@ transition: transform .2s;
   background-color: white;
   padding: 1.5rem;
   height: 120px;
-
 }
 
 .course-box-text h3 {
@@ -253,6 +325,43 @@ transition: transform .2s;
   padding-top: 1rem;
 }
 
+#learningline {
+  color: none;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .Learning {
+    background-color: white;
+  }
+
+.course-box {
+  padding: 0;
+}
+
+  .featured-courses {
+    flex-direction: column;
+      align-items: center;
+  }
+
+  .course-box-text {
+    background-color: lightgrey;
+    height: 1.5rem;
+  }
+
+  .course-box img {
+    display: none;
+  }
+
+  .course-box-text span, p {
+    display: none;
+  }
+
+#learningline {
+  color: #4a4a4a;
+}
+
+}
 /*Fourth Section "Thesis Exhibit" There's a video here and two more rectangular boxes*/
 
 .thesis-exhibit h1{
@@ -326,6 +435,27 @@ video {
   padding-bottom: 2rem;
 }
 
+.thesis-exhibit-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .thesis-exhibit-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+.thesis-exhibit-mobile h1{
+  text-align: center;
+  padding: 1rem;
+}
+
+  .thesis-exhibit {
+    display: none;
+  }
+
+}
 /*line between thesis area and footer*/
 
 hr {
@@ -338,4 +468,13 @@ hr {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .copyright{
+    padding: 1rem;
+  }
+.terms {
+  display: none;
+}
 }
