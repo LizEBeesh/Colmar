@@ -102,7 +102,7 @@ p {
 
 /*Hero area. Large image, grey background, "Learn Something New Everyday" Start here button*/
 .learn {
-  background-color: lightgrey;
+  background-color: #cccccc;
   display: flex;
   padding-top: 3rem;
 }
@@ -276,7 +276,7 @@ margin-right: 2rem;
 
 /*Third section on "Start Learning" grey background 6 boxes*/
 .Learning {
-  background-color: lightgrey;
+  background-color: #cccccc;
   margin-top: 2rem;
 }
 
@@ -345,7 +345,7 @@ transition: transform .2s;
   }
 
   .course-box-text {
-    background-color: lightgrey;
+    background-color: #cccccc;
     height: 1.5rem;
   }
 
@@ -405,7 +405,7 @@ video {
 }
 
 .thesis-story:hover {
-  background-color: #cccccc
+  background-color: #cccccc;
 }
 
 .thesis-img {
